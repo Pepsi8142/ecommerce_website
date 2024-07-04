@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="">
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'self' https://trusted-cdn.com; img-src 'self' data:">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="e-commerce Website">
+    <meta name="author" content="Mahmud Faisal">
+    <meta name="copyright" content="Copyright 2024 Mahmud Faisal">
+    <meta name="theme-color" content="#fafafa">
+    <meta name="twitter:title" content="My Webpage Title for Twitter">
+    <meta name="twitter:description" content="A concise description for Twitter sharing">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+
+    <title>E-commerce</title>
+
+    <link rel="stylesheet" href="css/tw-output.css">
+    <link rel="icon" href="#" sizes="any">
+    <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="#">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://fontawesome.msrumon.com/v6/css/all.min.css">
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+
+    <!----- Header Section ----->
+    <header class="py-4 shadow-lg border-y-green-100">
+        <div class="container flex items-center justify-between">
+            <!----- Logo ----->
+            <a href="index.html">
+                <img src="img/logo.svg" alt="Logo" class="pl-24">
+            </a>
+
+            <!----- Search Bar ----->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" id="search" class="w-full border border-primary border-r-0 pl-12 pr-3 py-3 rounded-l-md focus:outline-none" placeholder="Search">
+                <label for="search"></label>
+                <button class="bg-primary border border-primary text-black px-8 rounded-r-md hover:bg-gray-800 hover:text-gray-200 transition duration-500">Search</button>
+            </div>
+
+            <!----- Icons ----->
+            <div class="flex items-center space-x-12">
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-7">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-gray-300 text-xs">11</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-7">Cart</div>
+                    <span class="absolute left-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-gray-300 text-xs">3</span>
+                </a>
+                <a href="#" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-7">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!----- Header End ----->
+
+    <!----- Navigation Bar ----->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!----- All Category ----->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Category</span>
+
+                <!----- Drop Down for All Category ----->
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-dashed divide-gray-500 opacity-0 group-hover:opacity-100 transition duration-500 invisible group-hover:visible">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/bed.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/bed-2.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Mattress</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/sofa.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/office.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/restaurant.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Dining</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/terrace.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Outdoor</span>
+                    </a>
+                </div>
+            </div>
+
+            <!----- NavBar Links ----->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-8 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-primary transition duration-500">Home</a>
+                    <a href="#" class="text-gray-200 hover:text-primary transition duration-500">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-primary transition duration-500">About us</a>
+                    <a href="#" class="text-gray-200 hover:text-primary transition duration-500">Contact us</a>
+                </div>
+                <div class="flex items-center space-x-8 capitalize">
+                    <a href="login.html" class="text-gray-200 hover:text-primary transition duration-500">Login</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----- Navigation Bar End ----->
+
+    <!----- Breadcrumb ----->
+    <div class="container py-4 px-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Register</p>
+    </div>
+    <!----- Breadcrumb End ----->
+
+    <!----- Form Area ----->
+    <div class="container mx-auto py-16">
+        <div class="max-w-lg mx-auto shadow-lg px-6 py-7 border-gray-200 border rounded overflow-hidden">
+            <h2 class="text-2xl uppercase font-medium">Register</h2>
+            <p class="text-gray-600 my-3.5 text-sm">Create a new Account</p>
+            <hr class="border-b-1 border-gray-300">
+            <form action="">
+                <div class="py-2">
+                    <label for="name" class="text-gray-600 block py-2">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name" class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400">
+                </div>
+                <div class="py-2">
+                    <label for="email" class="text-gray-600 block py-2">Email Address: </label>
+                    <input type="email" name="email" id="email" placeholder="example: abc@exyz.com" required class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400">
+                </div>
+                <div class="py-2">
+                    <label for="pw" class="text-gray-600 block py-2">Enter Password: </label>
+                    <input type="password" name="pw" id="pw" placeholder="Must contain Upper, Lower Characters with Number & Symbol" required class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400">
+                </div>
+                <div class="py-2">
+                    <label for="cpw" class="text-gray-600 block py-2">Confirm Password: </label>
+                    <input type="password" name="pw" id="cpw" placeholder="Enter the Password Again" required class="block w-full border border-gray-300 px-4 py-3 text-gray-600 text-sm rounded focus:ring-0 focus:border-primary placeholder-gray-400">
+                </div>
+                <div class="flex items-center justify-between mt-6">
+                    <div class="flex items-center">
+                        <input type="checkbox" name="remember me" id="rm" class="text-primary focus:ring-0 rounded-sm cursor-pointer">
+                        <label for="rm" class="text-gray-600 ml-3 cursor-pointer">Remember Me</label>
+                    </div>
+                    <a href="#" class="text-primary">Forget Password?</a>
+                </div>
+                <button type="submit" class="w-full my-4 bg-primary border border-primary text-gray-100 px-8 py-3 font-medium rounded shadow-lg hover:bg-transparent hover:text-primary transition duration-500">Register</button>
+            </form>
+            <div class="my3 flex justify-center relative">
+                <div class="text-gray-600 capitalize px-3 bg-white z-10 relative">Or Register with</div>
+                <div class="absolute left-0 top-3 w-full border-b-2 border-gray-300"></div>
+            </div>
+            <div class="flex gap-6 mt-4">
+                <a class="w-1/2 py-2 flex items-center justify-center gap-3 text-center text-gray-100 bg-blue-700 rounded capitalize border-b-2 border-blue-700 shadow-xl font-roboto font-medium text-base hover:bg-gray-300 hover:text-blue-700 hover:border-b-2 hover:border-blue-700 hover:font-medium transition duration-400" href="https://www.facebook.com/login/" target="_blank" title="facebook">
+                    <i class="fa-brands fa-facebook"></i>Facebook
+                </a>
+                <a class="w-1/2 py-2 flex items-center justify-center gap-3 text-center text-gray-100 bg-red-700 rounded capitalize border-b-2 border-red-700 shadow-xl font-roboto font-medium text-base hover:bg-gray-300 hover:text-red-700 hover:border-b-2 hover:border-red-700 hover:font-medium transition duration-400" href="https://myaccount.google.com/intro/signing-in-to-google" target="_blank" title="google">
+                    <i class="fa-brands fa-google-plus-g"></i>Google
+                </a>
+                <a class="w-1/2 py-2 flex items-center justify-center gap-3 text-center text-gray-100 bg-gray-700 rounded capitalize border-b-2 border-gray-700 shadow-xl font-roboto font-medium text-base hover:bg-gray-300 hover:text-gray-700 hover:border-b-2 hover:border-gray-700 hover:font-medium transition duration-400" href="https://myaccount.google.com/intro/signing-in-to-google" target="_blank" title="google">
+                    <i class="fa-brands fa-apple"></i>Apple
+                </a>
+            </div>
+            <p class="mt-4 text-center text-gray-600">Already Have an Account? <a href="login.html" class="text-primary hover:border-b-2 hover:border-primary hover:font-medium transition duration-400">Log In</a></p>
+        </div>
+    </div>
+    <!----- Form Area End ----->
+
+    <!----- Footer ----->
+    <footer class="bg-gray-200 py-12 border-t border-y-gray-500 pl-6">
+        <div class="container grid grid-cols-3">
+            <!----- Footer Text ----->
+            <div class="col-span-1 space-y-8 mr-12">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo" class="w-30">
+                </a>
+                <p class="text-gray-500">labores suscipiantur viris vitae eos usu maiestatis option interdum tellus decore parturient qualisque sale eleifend feugait maecenas ultricies fusce iriure</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/login/" target="_blank" title="facebook" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/i/flow/login" target="_blank" title="twitter" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank" title="instagram" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" title="LinkedIN" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!----- Footer Link ----->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8 mx-auto">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Marketing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Analytics</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Commerce</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Pricing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Documentation</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Guides</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">API status</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8 mx-auto">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Marketing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Analytics</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Commerce</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Pricing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Documentation</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Guides</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">API status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----- Footer End ----->
+
+    <!----- Copyright ----->
+    <div class="bg-gray-800 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <p class="text-gray-300">&copy; 2024 Mahmud Faisal - All Rights Reserved</p>
+            <img src="img/methods.png" alt="Copyright" class="h-5">
+        </div>
+    </div>
+    <!----- Copyright End ----->
+
+<!--<script src="js/app.js"></script>-->
+</body>
+
+</html>

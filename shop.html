@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="refresh" content="">
+    <meta http-equiv="Content-Security-Policy"
+          content="script-src 'self' https://trusted-cdn.com; img-src 'self' data:">
+
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0 maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="e-commerce">
+    <meta name="author" content="Mahmud Faisal">
+    <meta name="copyright" content="Copyright 2024 Mahmud Faisal">
+    <meta name="theme-color" content="#fafafa">
+    <meta name="twitter:title" content="My Webpage Title for Twitter">
+    <meta name="twitter:description" content="A concise description for Twitter sharing">
+    <meta name="twitter:image" content="https://example.com/image.jpg">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/tw-output.css">
+    <link rel="icon" href="/img/logo.svg" sizes="any">
+    <link rel="icon" href="/img/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/logo.svg">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="https://fontawesome.msrumon.com/v6/css/all.min.css">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+<!-- Add your site or application content here -->
+
+    <!----- Header Section ----->
+    <header class="py-4 shadow-lg border-y-green-100">
+        <div class="container flex items-center justify-between">
+            <!----- Logo ----->
+            <a href="index.html">
+                <img src="img/logo.svg" alt="Logo" class="pl-24">
+            </a>
+
+            <!----- Search Bar ----->
+            <div class="w-full max-w-xl relative flex">
+                <span class="absolute left-4 top-3 text-lg text-gray-400">
+                    <i class="fas fa-search"></i>
+                </span>
+                <input type="text" id="search" class="w-full border border-primary border-r-0 pl-12 pr-3 py-3 rounded-l-md focus:outline-none" placeholder="Search">
+                <label for="search"></label>
+                <button class="bg-primary border border-primary text-black px-8 rounded-r-md hover:bg-gray-800 hover:text-gray-200 transition duration-500">Search</button>
+            </div>
+
+            <!----- Icons ----->
+            <div class="flex items-center space-x-12">
+                <a href="wishlist.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-heart"></i>
+                    </div>
+                    <div class="text-xs leading-7">Wish List</div>
+                    <span class="absolute right-0 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-gray-300 text-xs">11</span>
+                </a>
+                <a href="cart.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-shopping-bag"></i>
+                    </div>
+                    <div class="text-xs leading-7">Cart</div>
+                    <span class="absolute left-3 -top-1 w-5 h-5 rounded-full flex items-center justify-center bg-primary text-gray-300 text-xs">3</span>
+                </a>
+                <a href="account.html" class="text-center text-gray-700 hover:text-primary transition relative">
+                    <div class="text-2xl">
+                        <i class="far fa-user"></i>
+                    </div>
+                    <div class="text-xs leading-7">Account</div>
+                </a>
+            </div>
+        </div>
+    </header>
+    <!----- Header End ----->
+
+    <!----- Navigation Bar ----->
+    <nav class="bg-gray-800">
+        <div class="container flex">
+            <!----- All Category ----->
+            <div class="px-8 py-4 bg-primary flex items-center cursor-pointer relative group">
+                <span class="text-white">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <span class="capitalize ml-2 text-white">All Category</span>
+
+                <!----- Drop Down for All Category ----->
+                <div class="absolute w-full left-0 top-full bg-white shadow-md py-3 divide-y divide-dashed divide-gray-500 opacity-0 group-hover:opacity-100 transition duration-500 invisible group-hover:visible">
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/bed.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Bedroom</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/bed-2.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Mattress</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/sofa.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Sofa</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/office.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Office</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/restaurant.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Dining</span>
+                    </a>
+                    <a href="#" class="flex items-center px-6 py-3 hover:bg-gray-800 transition duration-500">
+                        <img src="img/icons/terrace.svg" alt="Sofa" class="w-5 h-5 object-contain">
+                        <span class="ml-6 text-primary text-md">Outdoor</span>
+                    </a>
+                </div>
+            </div>
+
+            <!----- NavBar Links ----->
+            <div class="flex items-center justify-between flex-grow pl-12">
+                <div class="flex items-center space-x-8 capitalize">
+                    <a href="index.html" class="text-gray-200 hover:text-primary transition duration-500">Home</a>
+                    <a href="shop.html" class="text-gray-200 hover:text-primary transition duration-500">Shop</a>
+                    <a href="#" class="text-gray-200 hover:text-primary transition duration-500">About us</a>
+                    <a href="#" class="text-gray-200 hover:text-primary transition duration-500">Contact us</a>
+                </div>
+                <div class="flex items-center space-x-8 capitalize">
+                    <a href="login.html" class="text-gray-200 hover:text-primary transition duration-500">Login/Register</a>
+                    <a href="index.html" class="text-gray-200 hover:text-primary transition duration-500">Log Out</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!----- Navigation Bar End ----->
+
+    <!----- Breadcrumb ----->
+    <div class="container py-4 px-4 flex items-center gap-3">
+        <a href="index.html" class="text-primary text-base">
+            <i class="fas fa-home"></i>
+        </a>
+        <span class="text-sm text-gray-400">
+            <i class="fas fa-chevron-right"></i>
+        </span>
+        <p class="text-gray-600 font-medium">Shop</p>
+    </div>
+    <!----- Breadcrumb End ----->
+
+    <!----- Shop Wrapper ----->
+    <div class="container grid grid-cols-4 gap-6 pt-4 pb-16 items-start">
+        <!----- Sidebar ----->
+        <div class="col-span-1 bg-white px-4 pb-6 shadow-lg rounded overflow-hidden">
+            <div class="divide-y-2 divide-gray-300 space-x-5 pb-2 px-2">
+                <!----- Category Filter ----->
+                <div class="py-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Categories</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-1" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-1" class="text-gray-600 ml-3 cursor-pointer">Bedroom</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-2" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-2" class="text-gray-600 ml-3 cursor-pointer">Mattress</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-3" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-3" class="text-gray-600 ml-3 cursor-pointer">Sofa</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-4" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-4" class="text-gray-600 ml-3 cursor-pointer">Office</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-5" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-5" class="text-gray-600 ml-3 cursor-pointer">Dining</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="cat-6" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="cat-6" class="text-gray-600 ml-3 cursor-pointer">Outdoor</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                    </div>
+                </div>
+                <!----- Brand Filter ----->
+                <div class="py-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Brands</h3>
+                    <div class="space-y-2">
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-1" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-1" class="text-gray-600 ml-3 cursor-pointer">Yamaha</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-2" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-2" class="text-gray-600 ml-3 cursor-pointer">Honda</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-3" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-3" class="text-gray-600 ml-3 cursor-pointer">Suzuki</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-4" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-4" class="text-gray-600 ml-3 cursor-pointer">Kawasaki</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-5" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-5" class="text-gray-600 ml-3 cursor-pointer">Bajaj</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="cursor-pointer">
+                                <input type="checkbox" name="" id="bnd-6" class="cursor-pointer text-primary focus:ring-0 rounded-sm">
+                                <label for="bnd-6" class="text-gray-600 ml-3 cursor-pointer">Hero</label>
+                            </div>
+                            <div class="ml-auto text-gray-600 text-sm">(15)</div>
+                        </div>
+                    </div>
+                </div>
+                <!----- Price Filter ----->
+                <div class="py-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Price</h3>
+                    <div class="space-y-2 flex items-center">
+                        <input type="text" name="" id="min" class="w-full border-gray-300 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-md rounded" placeholder="Min">
+                        <label for="min"></label>
+                        <span class="mx-3 text-gray-500"> - </span>
+                        <input type="text" name="" id="max" class="w-full border-gray-300 focus:border-primary px-3 py-1 text-gray-600 text-sm shadow-md rounded" placeholder="Max">
+                        <label for="max"></label>
+                    </div>
+                </div>
+                <!----- Size Filter ----->
+                <div class="py-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Size</h3>
+                    <div class="space-y-2 flex items-center gap-6">
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="xs" class="hidden">
+                            <label for="xs" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">XS</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="s" class="hidden">
+                            <label for="s" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">S</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="m" class="hidden">
+                            <label for="m" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">M</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="l" class="hidden">
+                            <label for="l" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">L</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="xl" class="hidden">
+                            <label for="xl" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">XL</label>
+                        </div>
+                        <div class="size-selector">
+                            <input type="radio" name="size" id="xxl" class="hidden">
+                            <label for="xxl" class="text-sm border border-gray-200 rounded-sm h-7 w-7 flex items-center justify-center cursor-pointer shadow-md text-gray-600">XXL</label>
+                        </div>
+                    </div>
+                </div>
+                <!----- Color Filter ----->
+                <div class="py-4">
+                    <h3 class="text-xl text-gray-800 mb-3 uppercase font-medium">Color</h3>
+                    <div class="space-y-2 flex items-center gap-6">
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="red" class="hidden">
+                            <label for="red" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: red;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="green" class="hidden">
+                            <label for="green" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: green;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="yellow" class="hidden">
+                            <label for="yellow" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: yellow;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="black" class="hidden">
+                            <label for="black" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: black;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="white" class="hidden">
+                            <label for="white" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: floralwhite;"></label>
+                        </div>
+                        <div class="color-selector">
+                            <input type="radio" name="color" id="blue" class="hidden">
+                            <label for="blue" class="border border-gray-200 rounded-sm h-7 w-7 cursor-pointer shadow-lg block" style="background-color: dodgerblue;"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----- Product ----->
+        <div class="col-span-3">
+            <!----- Sorting Bar ----->
+            <div class="flex items-center my-2">
+                <select name="Sort" id="sort" class="w-50 text-sm text-gray-600 px-4 py-3 border-gray-300 shadow-lg rounded focus:ring-primary focus:border-primary">
+                <label for="sort"></label>
+                    <optgroup label="date">
+                        <option value="">Latest Product First</option>
+                        <option value="">Oldest Product First</option>
+                    </optgroup>
+                    <optgroup label="price">
+                        <option value="">Price High to Low</option>
+                        <option value="">Price Low to High</option>
+                    </optgroup>
+                    <optgroup label="alphabet">
+                        <option value="">Alphabetically Ascending</option>
+                        <option value="">Alphabetically Descending</option>
+                    </optgroup>
+                    <option value="">Rating High</option>
+                    <option value="">Most Viewed</option>
+                    <option value="" selected hidden="until-found">Choose an option...</option>
+                </select>
+                <div class="flex gap-2 ml-auto">
+                    <div class="border border-primary w-8 h-8 flex items-center justify-center text-white bg-primary rounded cursor-pointer shadow-lg">
+                        <i class="fa-grid-4 fa-regular"></i>
+                    </div>
+                    <div class="border border-gray-800 w-8 h-8 flex items-center justify-center text-primary bg-transparent rounded cursor-pointer shadow-lg">
+                        <i class="fa-list fa-regular"></i>
+                    </div>
+                </div>
+            </div>
+            <!----- Product Grid ----->
+            <div class="grid grid-cols-3 gap-6 pt-3">
+                <div class="bg-gray-200 shadow-xl rounded-md overflow-hidden group">
+                    <!----- Product Image ----->
+                    <div class="relative shadow-lg">
+                        <img src="img/products/product6.jpg" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <a href="view.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="wishlist.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----- Product Content ----->
+                    <div class="px-4 py-3">
+                        <a href="view.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition duration-500">Officer's Chair</h4>
+                        </a>
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$45.00</p>
+                            <p class="text-sm text-gray-700 line-through">$55.00</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-600 ml-3">(150)</div>
+                        </div>
+                    </div>
+                    <!----- Button ----->
+                    <a href="cart.html" class="block w-full py-1 text-center bg-primary border border-primary rounded-b hover:bg-gray-800 hover:text-gray-300 hover:border-gray-800 transition duration-500">Add to Cart</a>
+                </div>
+                <div class="bg-gray-200 shadow-xl rounded-md overflow-hidden group">
+                    <!----- Product Image ----->
+                    <div class="relative shadow-lg">
+                        <img src="img/products/product1.jpg" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <a href="view.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="wishlist.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----- Product Content ----->
+                    <div class="px-4 py-3">
+                        <a href="view.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition duration-500">Double Seated Sofa</h4>
+                        </a>
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$140.00</p>
+                            <p class="text-sm text-gray-700 line-through">$150.00</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-600 ml-3">(150)</div>
+                        </div>
+                    </div>
+                    <!----- Button ----->
+                    <a href="cart.html" class="block w-full py-1 text-center bg-primary border border-primary rounded-b hover:bg-gray-800 hover:text-gray-300 hover:border-gray-800 transition duration-500">Add to Cart</a>
+                </div>
+                <div class="bg-gray-200 shadow-xl rounded-md overflow-hidden group">
+                    <!----- Product Image ----->
+                    <div class="relative shadow-lg">
+                        <img src="img/products/product11.jpg" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <a href="view.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="wishlist.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----- Product Content ----->
+                    <div class="px-4 py-3">
+                        <a href="view.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition duration-500">Couple Bed</h4>
+                        </a>
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$190.00</p>
+                            <p class="text-sm text-gray-700 line-through">$200.00</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-600 ml-3">(150)</div>
+                        </div>
+                    </div>
+                    <!----- Button ----->
+                    <a href="cart.html" class="block w-full py-1 text-center bg-primary border border-primary rounded-b hover:bg-gray-800 hover:text-gray-300 hover:border-gray-800 transition duration-500">Add to Cart</a>
+                </div>
+                <div class="bg-gray-200 shadow-xl rounded-md overflow-hidden group">
+                    <!----- Product Image ----->
+                    <div class="relative shadow-lg">
+                        <img src="img/products/product7.jpg" alt="" class="w-full">
+                        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition duration-500">
+                            <a href="view.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-search"></i>
+                            </a>
+                            <a href="wishlist.html" class="text-white text-lg w-9 h-8 rounded-full bg-primary flex items-center justify-center hover:bg-gray-800 transition duration-500">
+                                <i class="fas fa-heart"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!----- Product Content ----->
+                    <div class="px-4 py-3">
+                        <a href="view.html">
+                            <h4 class="uppercase font-medium text-xl mb-2 text-gray-800 hover:text-primary transition duration-500">Outdoor Relax</h4>
+                        </a>
+                        <div class="flex items-baseline mb-1 space-x-2 font-roboto">
+                            <p class="text-xl text-primary font-semibold">$170.00</p>
+                            <p class="text-sm text-gray-700 line-through">$180.00</p>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="flex gap-1 text-sm text-yellow-400">
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                                <span><i class="fas fa-star cursor-pointer"></i></span>
+                            </div>
+                            <div class="text-xs text-gray-600 ml-3">(150)</div>
+                        </div>
+                    </div>
+                    <!----- Button ----->
+                    <a href="cart.html" class="block w-full py-1 text-center bg-primary border border-primary rounded-b hover:bg-gray-800 hover:text-gray-300 hover:border-gray-800 transition duration-500">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----- Shop Wrapper End ----->
+
+    <!----- Footer ----->
+    <footer class="bg-gray-200 py-12 border-t border-y-gray-500 pl-6">
+        <div class="container grid grid-cols-3">
+            <!----- Footer Text ----->
+            <div class="col-span-1 space-y-8 mr-12">
+                <a href="index.html">
+                    <img src="img/logo.svg" alt="Logo" class="w-30">
+                </a>
+                <p class="text-gray-500">labores suscipiantur viris vitae eos usu maiestatis option interdum tellus decore parturient qualisque sale eleifend feugait maecenas ultricies fusce iriure</p>
+                <div class="flex space-x-6">
+                    <a href="https://www.facebook.com/login/" target="_blank" title="facebook" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="https://x.com/i/flow/login" target="_blank" title="twitter" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.instagram.com/accounts/login/" target="_blank" title="instagram" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/login" target="_blank" title="LinkedIN" class="text-gray-400 hover:text-gray-600">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            <!----- Footer Link ----->
+            <div class="col-span-2 grid grid-cols-2 gap-8">
+                <div class="grid grid-cols-2 gap-8 mx-auto">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Marketing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Analytics</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Commerce</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Pricing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Documentation</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Guides</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">API status</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-8 mx-auto">
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Solutions</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Marketing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Analytics</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Commerce</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Insights</a>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-semibold text-gray-400 uppercase tracking-wider">Support</h3>
+                        <div class="mt-4 space-y-4">
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Pricing</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Documentation</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">Guides</a>
+                            <a href="#" class="text-base text-gray-500 hover:text-gray-800 block">API status</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!----- Footer End ----->
+
+    <!----- Copyright ----->
+    <div class="bg-gray-800 py-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <p class="text-gray-300">&copy; 2024 Mahmud Faisal - All Rights Reserved</p>
+            <img src="img/methods.png" alt="Copyright" class="h-5">
+        </div>
+    </div>
+    <!----- Copyright End ----->
+
+<!--<script src="js/app.js"></script>-->
+</body>
+
+</html>
